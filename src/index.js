@@ -12,8 +12,8 @@ let page = 1;
 let search;
 let totalHits;
 loadMore.style.display = "none";
-async function getImage(search) {
-    url = `https://pixabay.com/api/?key=35985759-e1d6ff66bac9425b2a65b15e0&q=${search}&image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=12`;    
+async function getImage(search1) {
+    url = `https://pixabay.com/api/?key=35985759-e1d6ff66bac9425b2a65b15e0&q=${search1}&image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=12`;    
     try {
         const response = await axios.get(url);  
         console.log(response.data); 
