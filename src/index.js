@@ -2,7 +2,7 @@ const axios = require('axios').default;
 import SimpleLightbox from "simplelightbox";
 // Additional styles import
 import "simplelightbox/dist/simple-lightbox.min.css";
-import Notiflix from 'notiflix';
+import Notiflix, { Notify } from 'notiflix';
 
 const searchForm = document.querySelector('#search-form');
 const gallery = document.querySelector('.gallery');
@@ -28,7 +28,7 @@ async function getImage(search1) {
         }
               
     } catch (error) {
-        console.error(error);
+        Notify.Notify.Notiflix(error);
     }
 }
 
