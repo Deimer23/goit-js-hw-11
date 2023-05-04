@@ -59,4 +59,11 @@
   text-align: center;
 }
 
+.more {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 20px;
+  padding-right: 5px;
+}
+
 /*# sourceMappingURL=index.min.css.map */
