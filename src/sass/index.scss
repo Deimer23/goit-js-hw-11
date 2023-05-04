@@ -1,0 +1,37 @@
+@import './common';
+@import './example';
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    padding: 5px;
+    margin-bottom: 10px;
+    
+    &__search{
+        position: relative;
+    }
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+
+    &__image{
+        width: 300px;
+        height: 200px;
+    }
+}
+.info{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    justify-content: center;
+    &-item{
+        text-align: center;
+    }
+}
